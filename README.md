@@ -16,8 +16,16 @@ El sistema debe almacenar de forma persistente toda la información de avistamie
 
 Además, debe ofrecer una interfaz web en la que se puede consultar si un asteroide ha sido visto con anterioridad y mostrar los detalles de estos avistamientos. 
 
+## Documentación
+- **[Propuesta de implementación](https://drive.google.com/file/d/1Aw4eIp6eVtWsa8nSzc98N4Wqh2fc99bJ/view?usp=sharing)** <br>
+- **[Manual de Usuario](https://drive.google.com/file/d/1gkBOcnLUiqqjnnKrVH-_Ab_T8LaPJx_e/view?usp=sharing)** <br>
 
-## Despliegue
+## Requisitos para el despliegue
+
+- Git
+- Docker
+
+## Instrucciones para el Despliegue
 
 1 - **Clonar el repositorio Git del proyecto mediante el siguiente comando en la consola:** 
 <pre><code>git clone https://github.com/CyberDany/Reto.git</code></pre>
@@ -31,10 +39,7 @@ Además, debe ofrecer una interfaz web en la que se puede consultar si un astero
 4 - **Ejecutar las migraciones de la Base de Datos** 
 <pre><code>docker-compose exec web python manage.py migrate</code> </pre>
 
-5 - **Ya se encuentra desplegada la aplicación, puede acceder desde:** <br>
+5 - **Ya se encuentra desplegada la aplicación, se puede acceder desde:** <br>
 - http://localhost:8009/ <br>
 
-## Requisitos para el despliegue
 
-- Git
-- Docker
