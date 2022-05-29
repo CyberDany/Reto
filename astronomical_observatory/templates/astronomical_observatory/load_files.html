@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <h2>Select your document</h2>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <br>
+        <p>document.txt</p>
+        <input class="btn btn-primary" type="submit" value="Load File">
+    </form>
+
+{% endblock content %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h2>List of Asteroids</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Width</th>
+                <th scope="col">Height</th>
+                <th scope="col">Matrix</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for o in asteroids %}
+                <tr>
+                    <td>{{o.width}}</td>
+                    <td>{{o.height}}</td>
+                    <td>{{o.matrix}}</td>
+                    <td>
+                        <a href="/asteroid_sightings/{{o.id}}">
+                            <i class="fa-solid fa-eye"></i>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock content %}

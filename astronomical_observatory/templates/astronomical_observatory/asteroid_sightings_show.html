@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    
+    <h2>Asteroid Preview</h2>
+
+    {% for row in grid %}
+        <div class="grid_row">
+            {% for elem in row  %}
+                {% if elem == '1' %}
+                    <div class="asteroid grid_cell"></div>
+                {% else %}
+                    <div class="empty grid_cell"></div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+    
+    <h2>List of Sightings</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Observatory Code</th>
+                <th scope="col">Device Code</th>
+                <th scope="col">Device Width</th>
+                <th scope="col">Device Height</th>
+                <th scope="col">Device Matrix</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for o in observations %}
+                <tr>
+                    <td>{{o.date}}</td>
+                    <td>{{o.time}}</td>
+                    <td>{{o.observatory_code}}</td>
+                    <td>{{o.device_code}}</td>
+                    <td>{{o.width}}</td>
+                    <td>{{o.height}}</td>
+                    <td>{{o.device_matrix}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock content %}

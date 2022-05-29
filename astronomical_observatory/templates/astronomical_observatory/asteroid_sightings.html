@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h2>Check for Asteroid</h2>
+    <div class="container">
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            {% for field in form %}
+                <div class="mb-3">
+                    {{field.label_tag}}
+                    {{field}}
+                </div>
+                {{field.errors}}
+            {% endfor %}
+
+            <input class="btn btn-primary" type="submit" value="Verify">
+        </form>
+    </div>
+{% endblock content %}

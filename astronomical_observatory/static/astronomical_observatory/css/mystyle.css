@@ -1,0 +1,88 @@
+.grid_row{
+    display: flex;
+}
+
+.grid_cell{
+    border: 1px solid black;
+    height: 45px;
+    width: 45px;
+}
+
+.asteroid{
+    background-color: black;
+}
+
+h2{
+    margin-top: 20px;
+}
+
+.main_page_header{
+    margin-top: 50px;
+}
+
+.text_align_center{
+    text-align: center;
+}
+
+.cards_container{
+    margin-top: 120px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.my_card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s;
+
+    border-radius: 4px;
+    margin-bottom: 20px;
+
+    padding: 10px;
+    width: 30%;
+    border: 1px solid white;
+}
+
+.my_card a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.my_card svg{
+    padding-top: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.my_card h4{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.my_card p{
+    text-align: center;
+}
+
+.my_card:hover{
+    transform: translate(0, -10px);
+    cursor: pointer;
+
+    border: 1px solid rgba(164,164,164,0.27);
+
+    -webkit-box-shadow: 0px 0px 14px -9px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 0px 14px -9px rgba(0,0,0,0.38);
+    box-shadow: 0px 0px 14px -9px rgba(0,0,0,0.38);
+}
+
+.my_card:hover h4{
+    color: #003865;
+}
+
+.my_card:hover svg{
+    fill: #003865;
+}
