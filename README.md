@@ -33,10 +33,10 @@ Además, debe ofrecer una interfaz web en la que se puede consultar si un astero
 2 - **Entrar al directorio Reto creado**
 <pre><code>cd Reto/</code></pre>
 
-3 - **Ejecutar el siguiente comando de Docker para construir el contenedor** 
+3 - **Ejecutar el siguiente comando de Docker para construir el contenedor y lanzar el servicio** 
 <pre><code>docker-compose up</code> </pre>
 
-4 - **Ejecutar las migraciones de la Base de Datos** 
+4 - **Abrir una nueva consola y desde el directorio Reto/ ejecutar las migraciones de la Base de Datos** 
 <pre><code>docker-compose exec web python manage.py migrate</code> </pre>
 
 5 - **Ya se encuentra desplegada la aplicación, se puede acceder desde:** <br>
