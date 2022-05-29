@@ -1,4 +1,4 @@
-<p align="center"><img src="https://cdn.vectorstock.com/i/1000x1000/79/70/astrophysics-isometric-composition-vector-42327970.webp" width="400"></p>
+<p align="center"><img src="https://cdn.vectorstock.com/i/1000x1000/58/63/astronomy-isometric-horizontal-vector-40705863.webp" width="400"></p>
 
 <h1 align="center"> 
     Prueba técnica
