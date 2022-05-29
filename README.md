@@ -20,10 +20,10 @@ Además, debe ofrecer una interfaz web en la que se puede consultar si un astero
 ## Despliegue
 
 1 - **Clonar el repositorio Git del proyecto mediante el siguiente comando en la consola:** 
-<pre><code>$ git clone https://github.com/CyberDany/Reto.git</code></pre>
+<pre><code>git clone https://github.com/CyberDany/Reto.git</code></pre>
 
 2 - **Entrar al directorio Reto creado**
-<pre><code>$ cd Reto/</code></pre>
+<pre><code>cd Reto/</code></pre>
 
 3 - **Ejecutar el siguiente comando de Docker para construir el contenedor** 
 <pre><code>docker-compose up</code> </pre>
